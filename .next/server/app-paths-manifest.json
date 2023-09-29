@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/addTopic/page": "app/addTopic/page.js",
+  "/api/signin/route": "app/api/signin/route.js",
+  "/api/topics/route": "app/api/topics/route.js"
+}

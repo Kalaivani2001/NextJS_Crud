@@ -11,6 +11,21 @@ const topicSchema = new Schema(
   }
 );
 
-const Topic = mongoose.models.Topic || mongoose.model("Topic", topicSchema);
+export const Topic = mongoose.models.Topic || mongoose.model("Topic", topicSchema);
 
-export default Topic;
+// export  Topic;
+const signinSchema = new Schema(
+  {
+    userName: String,
+    email: String,
+    password: String,
+    role: String
+  },
+  {
+    timestamps: true,
+  }
+);
+
+export const Users = mongoose.models.Users || mongoose.model("Users", signinSchema);
+
+// export default Users;
